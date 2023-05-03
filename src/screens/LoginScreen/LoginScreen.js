@@ -40,14 +40,12 @@ const LoginScreen = () => {
 
   useEffect(() => {
     if (successUserInfo) {
-   
-        navigate(from, { replace: true })
-        setAlert(true)
-        setSuccessMesage('Iniciado correctamente')
-        setSignIngState(initialState)
-        setSuccessMesage('')
-        setAlert(false)
-    
+      navigate(from, { replace: true })
+      setAlert(true)
+      setSuccessMesage('Iniciado correctamente')
+      setSignIngState(initialState)
+      setSuccessMesage('')
+      setAlert(false)
     }
   }, [successUserInfo, from, navigate])
 
@@ -77,6 +75,7 @@ const LoginScreen = () => {
           height: '100%',
           alignItems: 'center',
         }}
+        md={7}
         lg={9}
       >
         <img style={{ borderRadius: '10rem', maxHeight: '300px' }} src={AberturasIcon} />
